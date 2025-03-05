@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Порча Онлайн</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Порча<br>Онлайн</h1>
+        
+        <input type="text" id="victimName" placeholder="Введите имя жертвы">
+        
+        <div class="button-group">
+            <button class="circle-button" onclick="toggleCurse(this)">Неудачи</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Болезни</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Разлука</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Бедность</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Страх</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Понос</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Лень</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Запутанные наушники</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Разбитый телефон</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Опоздания</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Потеря носка</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Вечный голод</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Жирные волосы</button>
+            <button class="circle-button" onclick="toggleCurse(this)">Плохая погода на отдыхе</button>
+        </div>
+        
+        <div id="errorMessage" class="error"></div>
+        
+        <button class="action-button" onclick="castCurse()">Наслать порчу</button>
+        
+        <div class="section-title">Снятие порчи</div>
+        
+        <input type="text" id="removeName" placeholder="Введите имя для снятия порчи">
+        
+        <button class="action-button" onclick="removeCurse()">Снять порчу</button>
+
+        <div id="removeError" class="error-message"></div>
+    </div>
+    
+    <!-- Контейнер для анимации порчи -->
+    <div id="curseAnimation" class="curse-animation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
